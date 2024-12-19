@@ -1,0 +1,171 @@
+﻿if statement: 
+Syntax:
+if (condition) {
+
+// code to be executed if the condition is true
+
+}
+
+Example:
+#include <stdio.h> int main() {
+int number = 10;
+if (number > 0) {
+
+printf("The number is positive.\n");
+
+}
+
+return 0;
+
+}
+
+
+Switch statement: 
+Syntax:
+switch (expression) { case constant1:
+// Code to be executed if expression equals constant1 break;
+case constant2:
+
+// Code to be executed if expression equals constant2 break;
+...
+
+default:
+// Code to be executed if expression doesn't match any case
+
+}
+Example:
+#include <stdio.h> int main() {
+int day = 3;
+
+
+
+switch (day) { case 1:
+printf("Monday\n"); break;
+case 2:
+
+printf("Tuesday\n"); break;
+case 3:
+
+printf("Wednesday\n"); break;
+case 4:
+printf("Thursday\n"); break;
+case 5:
+
+printf("Friday\n"); break;
+default:
+
+printf("Weekend\n"); break;
+}
+
+return 0;
+
+}
+
+for loop
+Syntax:
+for (initialization; condition; update) {
+
+// code to be executed
+
+}
+
+Example:
+
+for (int i = 0; i < 5; i++) {
+
+printf("%d\n", i); // Prints numbers 0 to 4
+
+}
+
+while loop: 
+Syntax:
+while (condition) {
+
+// code to be executed
+
+}
+
+Example:
+int i = 0; while (i < 5) {
+printf("%d\n", i); // Prints numbers 0 to 4 i++; // Increment i
+}
+
+do while loop: 
+Syntax:
+
+do {
+
+// code to be executed
+
+} while (condition);
+
+Example:
+int i = 0;
+do {
+
+printf("%d\n", i); // Prints numbers 0 to 4 i++; // Increment i
+} while (i < 5);
+
+break statement: 
+Example:
+#include <stdio.h> int main() {
+for (int i = 1; i <= 10; i++) { if (i == 5) {
+break; // Exit the loop when i equals 5
+
+}
+
+printf("%d\n", i);
+
+}
+
+return 0;
+
+}
+
+continue statement: 
+Example:
+#include <stdio.h> int main() {
+for (int i = 1; i <= 10; i++) { if (i % 2 == 0) {
+continue; // Skip even numbers
+
+}
+
+printf("%d\n", i);
+
+}
+
+return 0;
+
+}
+
+goto statement:
+Syntax: 
+goto label;
+
+...
+
+label:
+
+// code to be executed
+
+Label: 
+#include <stdio.h>
+
+int main() { int i = 0;
+
+
+// Loop until i reaches 5 while (1) {
+if (i == 5) {
+
+goto end; // Jump to the end label when i equals 5
+
+}
+
+printf("%d\n", i); i++;
+}
+
+end:
+printf("Exited the loop.\n"); return 0;
+}
+
+
